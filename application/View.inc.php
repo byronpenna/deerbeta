@@ -17,8 +17,8 @@
 	
 			$varsKeysParentView = $template->getJson($varsKeysSrcParent);
 			$varsKeysView = $template->getJson($varsKeysSrc);
-			$varsKeysView = array_merge((Array)$varsKeysParentView,(Array)$varsKeysView);
-
+			$varsKeysView = (Object)array_merge((Array)$varsKeysParentView,(Array)$varsKeysView);
+			$varsKeysView->html_path = BASE_URL."site_media";
 			$view = $template->setKeys($varsKeysView,$view);
 			$layout = new stdClass();
 			$dir = opendir(LAYOUT);
