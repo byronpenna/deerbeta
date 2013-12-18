@@ -3,6 +3,15 @@ class Work
 {
 	private $request;
 	private $frm;
+<<<<<<< HEAD
+=======
+	function setVarSession($obj){
+		session_start(true);
+		foreach ($obj as $key => $value) {
+			$_SESSION[$key] = $value;
+		}
+	}
+>>>>>>> as
 	function __construct($request = "")
 	{
 		if($request != ""){

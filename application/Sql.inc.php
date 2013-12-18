@@ -3,6 +3,20 @@ class Sql
 {
 	private $connection;
 	private $query;
+<<<<<<< HEAD
+=======
+	function executeReader(){
+		$rs = $this->execute();
+		$i = 0;
+		$objs = null;
+		while ($row = mysqli_fetch_assoc($rs)) {
+			$obj = (object)$row;
+			$objs[$i] = $obj;
+			$i++;
+		}
+		return $objs;
+	}
+>>>>>>> as
 	function executeQuery(){
 		$result = $this->execute();
 		if($result){

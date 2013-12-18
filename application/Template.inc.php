@@ -1,6 +1,17 @@
 <?php 
 class Template
 {
+<<<<<<< HEAD
+=======
+	function setDinamicsVars($obj,$view){
+		if($obj != null){
+			foreach ($obj as $key => $value) {
+				$view = str_replace("{#".$key."}",$value,$view);
+			}	
+		}
+		return $view;
+	}
+>>>>>>> as
 	function setKeys($obj,$view){
 		// echo "hey";
 		foreach ($obj as $key => $value) {

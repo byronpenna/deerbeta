@@ -11,12 +11,13 @@
 		<div class="well">
 			<fieldset>
 				<legend>Iniciar sesion</legend>
-					<form action="index/logueo" class="form-horizontal" method="POST">
-						<div class="control-group">
-							<label for="username" class="control-label">Usuario:</label>
-							<div class="controls">
-								<input type="text" name="username" id="username" >
+					<form action="{@site_path}index/logueo" class="form-horizontal" method="POST" role="form">
+						<div class="form-group">
+							<label for="username">Usuario:</label>
+							<div class="col-lg-10">
+								
 							</div>
+							<input type="text" name="username" id="username" >
 						</div>
 						<div class="control-group">
 							<label for="pass" class="control-label">Contraseña:</label>
@@ -24,10 +25,16 @@
 								<input type="password" name="pass" id="pass">
 							</div>
 						</div>
+						
 						<div class="control-group">
 							<div class="controls">
 								<button class="btn btn-primary" type="submit">Ingresar sesion</button>
 								<button class="btn btn-warning" type="reset">Limpiar</button>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								{#messaje}
 							</div>
 						</div>
 					</form>	
