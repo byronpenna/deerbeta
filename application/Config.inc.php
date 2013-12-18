@@ -8,6 +8,10 @@
 	define('VIEW',ROOT."views".DS);
 	define('KEYS',VIEW."keys".DS);
 	define('LAYOUT',VIEW."layout".DS);
-
-
+	define('MODELS',ROOT."models".DS);
+	// ROUTE
+	define("DB_HOST","localhost");
+	define("DB_USER","root");
+	define("DB_PASS","");
+	define("DB_NAME","taber_admin");
 ?>
